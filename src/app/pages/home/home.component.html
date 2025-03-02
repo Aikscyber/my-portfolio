@@ -1,17 +1,49 @@
-<div class="text-center p-10 bg-purple-100">
-    <h1 class="text-4xl font-bold text-purple-800">Welcome to My Web Development Portfolio</h1>
-    <p class="mt-4 text-lg text-gray-700">
-      Hello! I’m <strong>Aiko Ocampo</strong>, a passionate Web Developer currently studying BSIT with a specialization in Web Development. I create clean, responsive, and user-friendly websites using the latest web technologies.
-    </p>
+<div class="text-center p-12 bg-gradient-to-b from-purple-200 to-purple-100 shadow-lg rounded-lg animate-fade-in">
+  <h1 class="text-5xl font-extrabold text-purple-900 drop-shadow-lg animate-slide-in">Welcome to My Web Development Portfolio</h1>
+  <p class="mt-6 text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed animate-fade-in-delay">
+    Hello! I’m <strong class="text-purple-900">Aiko Ocampo</strong>, a passionate Web Developer currently studying BSIT with a specialization in Web Development. I create clean, responsive, and user-friendly websites using the latest web technologies.
+  </p>
+
+  <p class="mt-6 text-lg text-gray-700 max-w-2xl mx-auto animate-fade-in-delay">Check out my portfolio below to see the web projects I’ve worked on, or get in touch with me through the contact page.</p>
   
-    <p class="mt-6 text-lg">Check out my portfolio below to see the web projects I’ve worked on, or get in touch with me through the contact page.</p>
-  
-    <div class="mt-8 space-x-4">
-        <a href="/projects" class="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-700">View My Portfolio</a>
-        <a href="/contact" class="bg-pink-500 text-white px-6 py-2 rounded-lg hover:bg-pink-700">Contact Me</a>
-        
-    </div>
-  
-    <h2 class="text-3xl font-semibold mt-12">A Glimpse into My Work</h2>
+  <div class="flex justify-center mt-8 animate-bounce">
+      <img src="/assets/me.png" alt="Aiko Ocampo" class="w-52 h-52 rounded-full shadow-2xl border-4 border-purple-300">
   </div>
   
+  <h2 class="text-4xl font-semibold mt-14 text-purple-900 animate-slide-in">A Glimpse into My Work</h2>
+  
+  <p class="mt-6 text-lg text-gray-700 max-w-2xl mx-auto animate-fade-in-delay">From full-stack applications to responsive designs, I strive to build engaging and intuitive user experiences. My expertise spans across front-end and back-end development, ensuring seamless functionality in every project.</p>
+  
+  <div class="flex flex-wrap justify-center gap-6 mt-8 animate-fade-in">
+      <div class="p-6 bg-white shadow-lg rounded-lg max-w-sm">
+          <h3 class="text-2xl font-bold text-purple-800">Modern E-Commerce Store</h3>
+          <p class="mt-2 text-gray-600">A fully responsive online store with integrated payment processing and dynamic product listings.</p>
+      </div>
+      <div class="p-6 bg-white shadow-lg rounded-lg max-w-sm">
+          <h3 class="text-2xl font-bold text-purple-800">Portfolio Website</h3>
+          <p class="mt-2 text-gray-600">A sleek and professional portfolio site showcasing my web development skills and projects.</p>
+      </div>
+  </div>
+</div>
+
+<style>
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in { animation: fade-in 1s ease-in-out; }
+.animate-slide-in { animation: slide-in 1s ease-in-out; }
+.animate-fade-in-delay { animation: fade-in 1.5s ease-in-out; }
+.animate-bounce { animation: bounce 2s infinite; }
+</style>

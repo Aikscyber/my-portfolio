@@ -1,25 +1,131 @@
-<div class="p-10 bg-purple-100">
-    <h1 class="text-4xl font-bold text-purple-800">About Me</h1>
-  
-    <h2 class="text-2xl font-semibold mt-6">My Educational Journey</h2>
-    <p class="mt-3 text-lg text-gray-700">
-      I’m a third-year <strong>BSIT</strong> student specializing in Web Development. My interest in technology and design led me to pursue this career. I have experience in front-end development with HTML, CSS, and Bootstrap and I’m expanding my knowledge of back-end development with PHP, MongoDB, and MySQL.
-    </p>
-  
-    <h2 class="text-2xl font-semibold mt-6">My Web Development Skills</h2>
-    <p class="mt-3 text-lg text-gray-700">
-      I have experience with front-end development using <strong>HTML, CSS, and JavaScript</strong>, and I’m currently expanding my knowledge in back-end development with PHP and MySQL. Additionally, I’ve worked with <strong>React, Bootstrap, and WordPress</strong> to build responsive and user-friendly websites. I also focus on clean code and optimization to ensure the best user experience.
-    </p>
-  
-    <h2 class="text-2xl font-semibold mt-6">My Goals as a Developer</h2>
-    <p class="mt-3 text-lg text-gray-700">
-      As I continue my studies, I aim to further develop my skills in full-stack development and contribute to building innovative web applications that solve real-world problems. My goal is to continually learn and grow, striving to stay ahead of industry trends and create impactful, user-centered designs.
-    </p>
-  
-    <div class="mt-8">
-      <a href="assets/resume.pdf" download class="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-700">
-        Download My Resume
-      </a>
+here the whole code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        fadeIn: "fadeIn 1s ease-in-out",
+                        slideIn: "slideIn 1s ease-in-out",
+                        bounceIn: "bounce 1.5s infinite",
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            "0%": { opacity: 0 },
+                            "100%": { opacity: 1 }
+                        },
+                        slideIn: {
+                            "0%": { transform: "translateY(20px)", opacity: 0 },
+                            "100%": { transform: "translateY(0)", opacity: 1 }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-purple-100 text-gray-800">
+    <div class="p-10 min-h-screen flex items-center justify-center">
+        <div class="max-w-3xl w-full bg-white shadow-lg rounded-lg p-8 animate-fadeIn">
+            
+            <h1 class="text-4xl font-bold text-purple-800 text-center animate-slideIn">About Me</h1>
+
+            <h2 class="text-2xl font-semibold mt-6 animate-slideIn">My Educational Journey</h2>
+            <p class="mt-3 text-lg text-gray-700 animate-fadeIn">
+                I’m a third-year <strong>BSIT</strong> student specializing in Web Development. My interest in technology and design led me to pursue this career. I have experience in front-end development with HTML, CSS, and Bootstrap, and I’m expanding my knowledge of back-end development with PHP, MongoDB, and MySQL.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-6 animate-slideIn">My Web Development Skills</h2>
+            <p class="mt-3 text-lg text-gray-700 animate-fadeIn">
+                I have experience with front-end development using <strong>HTML, CSS, and JavaScript</strong>. I’m currently learning back-end technologies like PHP and MySQL. Additionally, I’ve worked with <strong>React, Bootstrap, and WordPress</strong> to build responsive and user-friendly websites.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-6 animate-slideIn">My Goals as a Developer</h2>
+            <p class="mt-3 text-lg text-gray-700 animate-fadeIn">
+                As I continue my studies, I aim to develop my skills in full-stack development and contribute to building innovative web applications that solve real-world problems.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-6 animate-slideIn">Skills</h2>
+            <div class="mt-6 space-y-4">
+                <!-- Skill Bars -->
+                <div class="flex items-center space-x-4 animate-slideIn">
+                    <img src="/assets/Html.png" alt="HTML" class="w-10 h-10">
+                    <span class="text-lg font-medium w-1/4">HTML</span>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-purple-500 h-2.5 rounded-full w-0 animate-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 animate-slideIn">
+                    <img src="/assets/css.png" alt="CSS" class="w-10 h-10">
+                    <span class="text-lg font-medium w-1/4">CSS</span>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-purple-500 h-2.5 rounded-full w-0 animate-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 animate-slideIn">
+                    <img src="/assets/bootstrap-skills.jpeg" alt="Bootstrap" class="w-10 h-10">
+                    <span class="text-lg font-medium w-1/4">Bootstrap</span>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-purple-500 h-2.5 rounded-full w-0 animate-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 animate-slideIn">
+                    <img src="/assets/Tailwind-skills.png" alt="Tailwind" class="w-10 h-10">
+                    <span class="text-lg font-medium w-1/4">Tailwind</span>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-purple-500 h-2.5 rounded-full w-0 animate-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 animate-slideIn">
+                    <img src="/assets/Php.png" alt="PHP" class="w-10 h-10">
+                    <span class="text-lg font-medium w-1/4">PHP</span>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-purple-500 h-2.5 rounded-full w-0 animate-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 animate-slideIn">
+                    <img src="/assets/MySql.png" alt="MySQL" class="w-10 h-10">
+                    <span class="text-lg font-medium w-1/4">MySQL</span>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-purple-500 h-2.5 rounded-full w-0 animate-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 animate-slideIn">
+                    <img src="/assets/mongo.png" alt="MongoDB" class="w-10 h-10">
+                    <span class="text-lg font-medium w-1/4">MongoDB</span>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-purple-500 h-2.5 rounded-full w-0 animate-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 animate-slideIn">
+                    <img src="/assets/Github.jpeg" alt="GitHub" class="w-10 h-10">
+                    <span class="text-lg font-medium w-1/4">Git/GitHub</span>
+                    <div class="w-full bg-gray-300 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-purple-500 h-2.5 rounded-full w-0 animate-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="assets/Resume.jpg" download class="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition duration-300 animate-bounceIn">
+                    Download My Resume
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
-  
+</body>
+</html>
+
